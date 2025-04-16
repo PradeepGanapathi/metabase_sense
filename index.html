@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Prompt</title>
+  <script>
+    // Prompt user for login
+    var username = prompt("Enter username:");
+    var password = prompt("Enter password:");
+
+    // Check if the credentials are correct
+    if (username === "pradeep@steam-a.com" && password === "sense@123") {
+      // If correct, redirect to your dashboard URL
+      window.location.href = "http://13.203.99.135:3000/public/dashboard/196ac54e-2404-4ffd-80c6-d85fdeef373b";
+    } else {
+      // If wrong, show an alert and optionally redirect elsewhere
+      alert("Access Denied");
+      window.location.href = "https://www.google.com";
+    }
+  </script>
+</head>
+<body>
+</body>
+</html>
